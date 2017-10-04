@@ -15,8 +15,8 @@ module.exports = function(source) {
 	this.cacheable && this.cacheable();
 	var coffeeRequest = loaderUtils.getRemainingRequest(this);
 	var jsRequest = loaderUtils.getCurrentRequest(this);
-	var query = loaderUtils.parseQuery(this.query);
-	var result;
+    var query = loaderUtils.getOptions(this);
+    var result;
 
 	try {
 		var cacheDirectory = query.cacheDirectory ? path.normalize( query.cacheDirectory + path.sep) : false;

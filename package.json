@@ -1,8 +1,8 @@
 {
-	"name": "coffee-loader",
-	"version": "0.7.2",
+	"name": "cached-coffee-loader",
+	"version": "0.9",
 	"author": "Tobias Koppers @sokra",
-	"description": "coffee loader module for webpack",
+	"description": "coffee loader module for webpack and coffee 1.6.X with some caching",
 	"dependencies": {
 		"loader-utils": "0.2.x",
 		"mkdirp": "^0.5.1"
@@ -10,14 +10,14 @@
 	"peerDependencies": {
 		"coffee-script": "1.x"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git@github.com:webpack/coffee-loader.git"
-	},
 	"licenses": [
 		{
 			"type": "MIT",
 			"url": "http://www.opensource.org/licenses/mit-license.php"
 		}
-	]
+	],
+    "repository": {
+		"type": "git",
+		"url": "git@github.com:genintho/cached-coffee-loader.git"
+    }
 }
